@@ -22,8 +22,6 @@ public class CompanyProfile {
 	private String location;
 	@OneToOne
 	private Users user;
-	
 	@OneToMany(mappedBy = "companyProfile")
 	private List<JobPost> jobPosts;
-	
 }

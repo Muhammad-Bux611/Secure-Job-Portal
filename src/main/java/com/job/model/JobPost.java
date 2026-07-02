@@ -28,11 +28,8 @@ public class JobPost {
 	private JobStatus jobStatus;
 	@Enumerated(EnumType.STRING)
 	private JobType jobType;
-	
 	@ManyToOne
 	private CompanyProfile companyProfile;
-	
 	@OneToMany(mappedBy = "jobPost")
 	List<JobApplication> applications;
-	
 }

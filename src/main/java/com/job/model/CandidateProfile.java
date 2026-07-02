@@ -20,8 +20,6 @@ public class CandidateProfile {
 	private String experience;
 	@OneToOne
 	private Users user;
-	
 	@OneToMany(mappedBy = "candidateProfile")
 	List<JobApplication> applications;
-
 }
